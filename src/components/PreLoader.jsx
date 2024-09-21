@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import "./Preloader.css"; // Import the CSS file for animation
+import React from "react";
+import "./preloader.css"; // Import the CSS file for animation
 
 const PreLoader = () => {
 
