@@ -18,7 +18,7 @@ export default function ImgMediaCard(props) {
     glareEnable={true}
     glareMaxOpacity={0.9}
     glareColor="#ffffff"
-    glarePosition="bottom"
+    glarePosition="top"
     gyroscope={true}
     transitionSpeed={500}
     // reset={true}
