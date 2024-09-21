@@ -5,7 +5,6 @@ import React,{useState, useEffect} from "react";
 // import { ComputersCanvas } from "./canvas";
 import Typewriter from "typewriter-effect";
 import Particle from './Particle'
-import "./Preloader.css";
 const Hero = () => {
    
   return (
