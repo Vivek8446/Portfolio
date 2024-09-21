@@ -1,31 +1,52 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import { Footer, Navbar } from "./components";
-import { About, Contact, Home, Projects } from "./pages";
+import { useState, Fragment,useEffect } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import { BrowserRouter , Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Footer from './components/Footer'
+import Work from './components/Work'
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import MenuBar from './components/MenuBar';
+// import Contact from './components/Contact';
+import PreLoader from './components/PreLoader';
+import Quote from './components/Quote';
 
-const App = () => {
+function App() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+      // Simulate the loading timeout for demonstration
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000); // Change this to control how long the preloader stays
+    }, []);
+
+  if (loading) return <PreLoader/>;
+ 
   return (
-    <main className='bg-slate-300/20'>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route
-            path='/*'
-            element={
-              <>
-                <Routes>
-                  <Route path='/about' element={<About />} />
-                  <Route path='/projects' element={<Projects />} />
-                  <Route path='/contact' element={<Contact />} />
-                </Routes>
-                <Footer />
-              </>
-            }
-          />
-        </Routes>
-      </Router>
-    </main>
-  );
-};
 
-export default App;
+(<Routes>
+   
+    <Route  path="/" element={
+    <Fragment>
+     
+        <Navbar/>
+        <Hero />
+        <Work/>
+        <Projects/>
+        <Skills/>
+        {/* <Quote/> */}
+        {/* <MenuBar/> */}
+        {/* <Contact/> */}
+        <Footer/>
+    </Fragment>
+    } />
+    
+    
+</Routes>)
+  )
+}
+
+export default App

@@ -1,0 +1,58 @@
+/* Preloader.css */
+
+/* Full-screen black background */
+.preloader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:  rgb(0, 0, 0);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .preloader-text {
+    font-family: "Arial", sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .preloader-text span {
+    display: block;
+    opacity: 0;
+    animation: fadeInText 1.2s forwards;
+  }
+  
+  /* Fade in each word one by one */
+  .text1 {
+    animation-delay: 0s;
+  }
+  
+  .text2 {
+    animation-delay: 1.5s;
+  }
+  
+  .text3 {
+    animation-delay: 3s;
+  }
+  
+  .text4 {
+    animation-delay: 4.5s;
+  }
+  
+  /* Animation keyframes for fade-in effect */
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+      transform: translateY(50px); /* Start position for the text */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End position */
+    }
+  }
+  
