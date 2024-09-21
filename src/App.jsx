@@ -9,10 +9,9 @@ import Footer from './components/Footer'
 import Work from './components/Work'
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-// import MenuBar from './components/MenuBar';
 // import Contact from './components/Contact';
 import PreLoader from './components/PreLoader';
-import Quote from './components/Quote';
+// import Quote from './components/Quote';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -38,7 +37,6 @@ function App() {
         <Projects/>
         <Skills/>
         {/* <Quote/> */}
-        {/* <MenuBar/> */}
         {/* <Contact/> */}
         <Footer/>
     </Fragment>
