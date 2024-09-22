@@ -1,5 +1,6 @@
 import Card from './Card'
 import React from 'react'
+import "../App.css"
 
 const links = [{
     id:1,
@@ -56,11 +57,11 @@ function Projects() {
                 <p className={`sm:text-[18px] text-[14px] text-secondary text-white uppercase tracking-wider`}>My work</p>
                 <h2 className={`text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[50px]`}>Projects.</h2>
             </div>
-            <div className=' relative rounded-full  flex justify-around items-center flex-wrap flex-col md:flex-row  p-2 mt-10'>
+            <div className=' relative rounded-full  flex justify-around items-center flex-wrap flex-col md:flex-row  p-2 mt-10 fadeInUp-animation'>
             {links.map(link =>(
 
            <Card 
-           className="w-1/2"
+           className="w-1/2 "
            key={link.id}
             img={link.img}
            title={link.title}

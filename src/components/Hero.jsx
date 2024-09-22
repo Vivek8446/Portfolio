@@ -5,11 +5,12 @@ import React,{useState, useEffect} from "react";
 // import { ComputersCanvas } from "./canvas";
 import Typewriter from "typewriter-effect";
 import Particle from './Particle'
+import "../App.css"
 const Hero = () => {
    
   return (
 
-<section className={`relative w-full h-screen mb-36 mx-auto bg-[#050816]`} id="home">
+<section className={`relative w-full h-screen mb-36 mx-auto bg-[#050816] fadeInUp-animation`} id="home">
   <Particle id="particles" className="" />
   <div
     className={`sm:px-16 px-6 absolute inset-0 md:top-[20px] top-32 max-w-7xl max-auto flex flex-col md:flex-row items-start gap-5 `}

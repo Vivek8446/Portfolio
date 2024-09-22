@@ -42,3 +42,17 @@
 .read-the-docs {
   color: #888;
 }
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+  }
