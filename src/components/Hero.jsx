@@ -9,7 +9,7 @@ const Hero = () => {
    
   return (
 
-<section className={`relative w-full h-screen mx-auto bg-[#050816]`} id="home">
+<section className={`relative w-full h-screen mb-10 mx-auto bg-[#050816]`} id="home">
   <Particle id="particles" className="" />
   <div
     className={`sm:px-16 px-6 absolute inset-0 md:top-[20px] top-32 max-w-7xl max-auto flex flex-col md:flex-row items-start gap-5 `}
