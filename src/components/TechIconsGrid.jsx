@@ -28,7 +28,7 @@ const techIcons = [
 
 const TechIconsGrid = () => {
   return (
-    <div className="flex justify-center items-center h-screen 0 ">
+    <div className="flex justify-center items-center h-screen  ">
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
         {techIcons.map((tech, index) => (
           <Tilt
