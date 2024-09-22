@@ -156,7 +156,7 @@ const Navbar = () => {
                     </a>
                     <a
                     exact="true"
-                        href='projects'
+                        href='#projects'
                         
                         className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                         activeclassname="bg-gray-900 text-white"
@@ -165,7 +165,7 @@ const Navbar = () => {
                     </a>
                     <a
                     exact="true"
-                      href='skills'
+                      href='#skills'
                         
                         className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                         activeclassname="bg-gray-900 text-white"
