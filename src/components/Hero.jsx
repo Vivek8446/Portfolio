@@ -53,12 +53,14 @@ const Hero = () => {
         innovative strategies to overcome them.
       </p>
       <div className="flex md:flex-row items-center justify-start gap-8 mt-12">
-      
+
+          <a href="https://drive.google.com/file/d/1alZUIkbGlIRtAQFxfZTaDmwPML9Pb6Qu/view?usp=drive_link" download={true} className="text-[16px]">
+         
         <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-500 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 ">
-        <a href="https://drive.google.com/file/d/1alZUIkbGlIRtAQFxfZTaDmwPML9Pb6Qu/view?usp=drive_link" download={true} className="text-[16px]">
-            Resume
-          </a>
+          Resume
+         
         </button>
+            </a>
   
         {/* <button
           type="submit"
