@@ -15,7 +15,7 @@ function Work() {
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#1d1836', color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid  #1d1836' }}
-                    date="July 2024 - present"
+                    date="July 2024 - Sep 2024"
                     iconStyle={{ background: '#1d1836', color: '#fff' }}
                     icon={<>
                         <div className='flex justify-center items-center w-full h-full'>
