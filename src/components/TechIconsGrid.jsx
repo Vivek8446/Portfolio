@@ -6,6 +6,7 @@ import { TbBrandCpp } from "react-icons/tb";
 
 const techIcons = [
   { name: 'React JS', icon: <FaReact size={50} color="#61DAFB" /> },
+  { name: 'React Native', icon: <FaReact size={50} color="#61DAFB" /> },
   { name: 'Tailwind CSS', icon: <SiTailwindcss size={50} color="#06B6D4" /> },
   { name: 'JavaScript', icon: <FaJs size={50} color="#F7DF1E" /> },
   { name: 'JQuery', icon: <SiJquery size={50} color="#F7DF1E" /> },
